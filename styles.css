@@ -133,9 +133,11 @@ body {
     position: sticky;
     bottom: 0;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #a5c7ff;
 }
+
+/* Footer container (aligned in a row) */
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -148,7 +150,7 @@ body {
 #toggle-nav,
 .cta-button,
 .placeorder {
-    padding: 6px 12px;
+    padding: 0px 12px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -160,11 +162,25 @@ body {
 }
 
  #toggle-nav {
-    padding: 10px 12px;
+    padding: 6px 12px;
     background-color: #007bff;
     color: white;
     border: none;
 }
+
+/* 
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.placeorder {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+} */
 #hide-nav {
     background-color: #007bff;
     color: white;
@@ -205,8 +221,48 @@ body {
     text-align: center;
     margin-bottom: 10px;
 }
+/* .menu-item .original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 10px;
+    font-size: 14px;
+}
 
+.menu-item .offer {
+    background: #ffcc00;
+    color: #222;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+} */
+.menu-item .price {
+    font-size: 18px;
+    color: #e63946;
+    font-weight: bold;
+    display: inline;
+    margin-right: 10px;
+}
 
+.menu-item .original-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+    display: inline;
+}
+
+.menu-item .offer {
+    background: #ffcc00;
+    color: #222;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
 .dish .tag:hover {
     /* background-color: #ddd; */
     font-size: 14px;
@@ -374,7 +430,14 @@ body {
         font-size: 14px;
         padding: 5px;
     }
-
+    #toggle-nav,
+    .cta-button,
+    .placeorder {
+        padding: 2px 12px;
+    }
+    #toggle-nav{
+        padding: 6px 12px;
+    }
     .restaurant-info {
         padding: 12px 0px;
         font-size: 14px;
