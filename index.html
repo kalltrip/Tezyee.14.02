@@ -137,55 +137,7 @@
             }
         }
 
-        //  let selectedDishes = {};
-
-        // function selectDish(dishName, buttonElement) {
-        //     if (!selectedDishes[dishName]) {
-        //         selectedDishes[dishName] = 1;
-        //         updateButton(buttonElement, dishName);
-        //     }
-        // }
-
-        // function updateButton(buttonElement, dishName) {
-        //     buttonElement.innerHTML = `
-        //     <button class="minus" onclick="updateCount('${dishName}', -1, this)">-</button>
-        //     <span class="count">${selectedDishes[dishName]}</span>
-        //     <button class="plus" onclick="updateCount('${dishName}', 1, this)">+</button>
-        //     `;
-        //     buttonElement.classList.add("active");
-        // }
-
-        // function updateCount(dishName, change, buttonElement) {
-        //     if (selectedDishes[dishName] + change > 0) {
-        //         selectedDishes[dishName] += change;
-        //     } else {
-        //         delete selectedDishes[dishName];
-        //         buttonElement.parentElement.innerHTML = `
-        //         <button class="btn" onclick="selectDish('${dishName}', this)">Add On Order</button>
-        //         `;
-        //         return;
-        //     }
-        //     buttonElement.parentElement.querySelector(".count").innerText = selectedDishes[dishName];
-        // }
-
-        // // Function to send order details via WhatsApp
-        // function shareOnWhatsApp(phoneNumber) {
-        //     if (Object.keys(selectedDishes).length === 0) {
-        //         alert("Please select at least one dish.");
-        //         return;
-        //     }
-        //     //  ( "Pay Total < order_total> to Restaurant on UPI ID  <var_upi_id> "
-        //     let orderSummary = Object.entries(selectedDishes)
-        //         .map(([dish, quantity], index) => `${index + 1}. ${dish} - Qty: ${quantity}`)
-        //         .join("\n");
-
-        //     const whatsappURL = `https://wa.me/${phoneNumber}?text=Order Details:%0A${encodeURIComponent(orderSummary)}`;
-        //     window.open(whatsappURL, "_blank");
-
-        //     // Reset selection after ordering
-        //     selectedDishes = {};
-        //     document.querySelectorAll(".btn").forEach(btn => btn.innerHTML = "Add On Order");
-        // }
+      
 
 let selectedDishes = {};
 let configData = {}; // To store fetched UPI ID & WhatsApp number
